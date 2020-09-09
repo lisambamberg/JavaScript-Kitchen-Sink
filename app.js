@@ -33,23 +33,21 @@ let pet = {
 }
 console.log(pet);
 
-let arr = [{ name: "Bob", age: 22 }, { name: "Sharon", age: 70 }, { name: "Bart", age: 16 }, { name: "Sarah", age: 33 }, { name: "Joe", age: 20 }];
+let arr = [{ name: "Bob", age: 22 },
+{ name: "Sharon", age: 70 },
+{ name: "Bart", age: 16 },
+{ name: "Sarah", age: 33 },
+{ name: "Joe", age: 20 }];
 for (let i = 0; i < arr.length; i++) {
-    console.log();
+    checkAge(arr[i].name, arr[i].age);
 }
-checkAge("Bob", 22);
-checkAge("Sharon", 70);
-checkAge("Bart", 16);
-checkAge("Sarah", 33);
-checkAge("Joe", 20);
 
 function getLength(string) {
     return string.length;
 }
-
 let result = getLength("Hello World");
 
-if (result % 2 == 0) {
+if (result % 2 === 0) {
     console.log('The world is nice and even!');
 } else {
     console.log('The world is an odd place!');
